@@ -1,3 +1,3 @@
 # lib.elim
 
-lib.elim 存放产品哲学的实现的类
+lib.elim 存放产品哲学的实现的类的类库
