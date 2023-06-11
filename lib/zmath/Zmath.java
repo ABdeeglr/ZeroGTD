@@ -40,6 +40,24 @@ public class Zmath {
     }
 
 
+    /**
+     * 一个简单的计算阶乘的函数，接收一个整型 N，返回 N!
+     * @param N
+     * @return
+     */
+    public static int Zorder(int N) {
+        int ret = 1;
+        for (int i = N; i > 0; i--) {
+            ret *= i;
+        }
+
+        return ret;
+    }
+
+
+
+
+
 
 
 
@@ -53,7 +71,6 @@ public class Zmath {
     public static void main(String[] args) {
         StdOut.println("Hello Zmath!");
 
-        int ret = Zlog2(1024*1024);
-        StdOut.println(ret);
+        StdOut.println(Zorder(10));
     }
 }
