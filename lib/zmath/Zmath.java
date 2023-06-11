@@ -56,6 +56,38 @@ public class Zmath {
 
 
 
+    /**
+     * 快速斐波那契数列！非常快！占用空间非常小！输出绝对准确！
+     * @param N
+     * @return
+     */
+    public static long Zquickfib(int N) {
+        if (N == 0) return 0;
+        if (N == 1) return 1;
+
+        long[] fibs = new long[3];
+        fibs[0] = 1;
+        fibs[1] = 1;
+        
+        for (int i = 2; i < N; i++) {
+            fibs[i % 3] = fibs[(i-2) % 3] + fibs[(i-1) % 3];
+        }
+
+        return fibs[(N-1) % 3];
+    }
+
+    /**
+     * 递归型慢速斐波那契数列
+     * @param N
+     * @return
+     */
+    public static long fib(int N) {
+        if (N == 0) return 0;
+        if (N == 1) return 1;
+        
+        return fib(N - 1) + fib(N - 2);
+    }
+
 
 
 
