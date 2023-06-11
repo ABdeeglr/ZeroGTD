@@ -3,6 +3,8 @@ package lib.algs.sort;
 
 import java.util.Arrays;
 import java.lang.Math;
+import lib.algs.search.BinarySearch;
+import lib.std.StdOut;
 
 public class BubbleSort {
 
@@ -19,6 +21,15 @@ public class BubbleSort {
         int[] sdd = sortInts(arry);
         String aft = Arrays.toString(sdd);
         System.out.println(aft);
+
+        System.out.println("_______Binary Search Test________");
+        int k = BinarySearch.indexOf(sdd, 114);
+        if (k > 0) {
+            StdOut.println("114 is in the position " + k);
+        } else {
+            StdOut.println("Can not find 114.");
+        }
+
     }
 
 
