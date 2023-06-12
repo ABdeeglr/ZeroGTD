@@ -1,15 +1,15 @@
 package lib.std;
 
 public class StdTime {
-    private int year;
-    private int month;
-    private int day;
-    private int hour;
-    private int minute;
-    private int second;
-    private int mill;
-    private int weekday;
-    private int weelNumber;
+    public int year;
+    public int month;
+    public int day;
+    public int hour;
+    public int minute;
+    public int second;
+    public int mill;
+    public int weekday;
+    public int weelNumber;
 
     /**
      * 获取一个标准时间(GMT)对象
@@ -28,6 +28,8 @@ public class StdTime {
         this.weekday = yearsMonthsDaysAndWeeks[3];
         this.weelNumber = yearsMonthsDaysAndWeeks[4];
     }
+
+    public 
 
     @Override
     public String toString() {
