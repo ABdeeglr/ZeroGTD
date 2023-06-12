@@ -11,7 +11,7 @@ public class Idea {
     private int locateTimeChunk; // 所在的时间区块
 
     
-    public Idea(String name) {
+    public Idea(String name, String message) {
 
     }
 }
